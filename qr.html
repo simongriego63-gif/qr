@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartel QR - Nexo Ajustado</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f3f4f6;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .cartel {
+        background-color: #111111;
+        width: 360px; /* Ajustado sutilmente para dar más aire al texto */
+        border-radius: 16px;
+        box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .contenido-superior {
+        padding: 45px 20px 25px 20px; /* Menos padding lateral para el texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .linea1 {
+        font-size: 28px; /* Tamaño optimizado para que entre en un solo renglón */
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.5px;
+        display: block;
+        line-height: 1.2;
+        white-space: nowrap; /* Fuerza a que no se divida el renglón */
+    }
+    .linea2 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #e0e0e0;
+        display: block;
+        margin-top: 6px;
+    }
+    .qr-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .qr-container img {
+        width: 245px;
+        height: 245px;
+    }
+    /* Barra divisoria blanca */
+    .barra-division {
+        width: 100%;
+        height: 12px;
+        background-color: #ffffff;
+    }
+    /* Barra inferior fina para el Instagram */
+    .footer {
+        background-color: #050505;
+        padding: 12px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .ig-logo {
+        width: 16px;
+        height: 16px;
+        fill: #888888;
+    }
+    .handle {
+        font-size: 13px;
+        font-weight: 300;
+        color: #888888;
+        letter-spacing: 1px;
+    }
+</style>
+</head>
+<body>
+
+<div class="cartel">
+    
+    <div class="contenido-superior">
+        <div class="header">
+            <span class="linea1">Súmate a nexo</span>
+            <span class="linea2">y ganá</span>
+        </div>
+        <div class="qr-container">
+            <img src="qr-code.svg" alt="Código QR Nexo">
+        </div>
+    </div>
+
+    <div class="barra-division"></div>
+
+    <div class="footer">
+        <svg class="ig-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.975-9.658a1.427 1.427 0 100-2.854 1.427 1.427 0 000 2.854z"/>
+        </svg>
+        <div class="handle">@digital.kore</div>
+    </div>
+</div>
+
+</body>
+</html>
